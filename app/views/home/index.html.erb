@@ -1,6 +1,12 @@
 <div class="jumbotron">
 <h1>Welcome to laurala</h1>
 </div>
+<% if user_signed_in? %>
 <%= link_to 'About Us', home_about_path, class: 'btn btn-default' %>
 <%= link_to 'Home', root_path, class: 'btn btn-primary' %>
+<%= link_to 'Edit Profile', edit_user_registration_path, class: 'btn btn-default' %>
+<% else %>
+<%= link_to 'Log In', new_user_session_path, class: 'btn btn-default' %>
+<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-default' %>
+<% end %>
 <p>content comming soon!</p>
