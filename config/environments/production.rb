@@ -77,4 +77,4 @@ config.action_mailer.default_url_options = { host:'laurala.herokuapp.com'}
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+end 
