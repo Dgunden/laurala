@@ -1,6 +1,3 @@
-<% if_user_signed_in?%>
-<% else %>
-<% end  %> 
 <div class="panel panel-default">
   <div class="panel-heading"><h2>Sign up</h2></div>
   <div class="panel-body">
@@ -12,7 +9,6 @@
     <%=f.label:email %><br/>
     <%=f.email_field :email, autofocus: true, class: 'form-control'%>
   </div>
-
   <div class="form-group">
     <%=f.label:password%>
     <% if@validatable%>
@@ -21,11 +17,10 @@
     <%= f.password_field :password, autocomplete: "off", class: 'form-control'%>
   </div>
 
-
-  <div class="actions">
-    <%= f.submit "Sign up",class:'btn btn-primary' %>
+<div class="actions">
+    <%=f.submit "Sign up",class:'btn btn-primary'%>
   </div>
 <%end%>
 </div>
-<div class"panel-footer"><%= render"devise/shared/links"%></div>
+<div class="panel-footer"><%= render"devise/shared/links"%></div>
 </div>

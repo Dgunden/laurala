@@ -1,7 +1,5 @@
 <% if user_signed_in? %>
-<%= link_to'Edit profile', edit_user_registration_path %>
-<% else %>
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
 <div class="panel panel-default">
   <div class="panel-heading"><h2>Edit</h2></div>
   <div class="panel-body">
@@ -51,3 +49,4 @@
 </div>
 <div class="panel-footer"><%=render "devise/shared/links" %></div>
 </div>
+
